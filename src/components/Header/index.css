@@ -13,3 +13,7 @@
     height: 180px;
   }
 }
+
+.app-title {
+  text-decoration: none;
+}

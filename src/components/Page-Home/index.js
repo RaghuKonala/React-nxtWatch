@@ -7,7 +7,7 @@ import {AiOutlineSearch, AiOutlineClose} from 'react-icons/ai'
 import VideoCard from '../VideoCard'
 import FailureView from '../FailureView'
 import ThemeContext from '../../context/ThemeContext'
-import {logoLightTheme, noSearchResultsImage} from '../../assets/images'
+import {noSearchResultsImage} from '../../assets/images'
 
 import {
   AppContentContainer,
@@ -166,9 +166,9 @@ class HomePage extends Component {
   renderHomeBanner = () => (
     <HomeBannerContainer data-testid="banner">
       <HomeBannerContent>
-        <HomeBannerImage src={logoLightTheme} alt="nxt watch logo" />
+        <HomeBannerImage>iWATCH</HomeBannerImage>
         <BannerDescription>
-          Buy Nxt Watch Premium prepaid plans with UPI
+          Buy iWATCH Premium prepaid plans with UPI
         </BannerDescription>
         <BannerGetItButton>GET IT NOW</BannerGetItButton>
       </HomeBannerContent>

@@ -23,9 +23,12 @@ export const HomeBannerContent = styled.div`
   align-items: start;
   max-width: 320px;
 `
-export const HomeBannerImage = styled.img`
-  height: 30px;
-  width: 120px;
+export const HomeBannerImage = styled.p`
+  color: #313131;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-family: 'Roboto';
 `
 export const BannerDescription = styled.p`
   color: #000000;

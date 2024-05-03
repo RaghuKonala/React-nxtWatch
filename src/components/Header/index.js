@@ -9,7 +9,7 @@ import {FaMoon as DarkThemeIcon} from 'react-icons/fa'
 import {GiHamburgerMenu as MenuIcon} from 'react-icons/gi'
 import {HiOutlineSun as LightThemeIcon} from 'react-icons/hi'
 
-import {logoLightTheme, logoDarkTheme, profileImage} from '../../assets/images'
+import {profileImage} from '../../assets/images'
 import ThemeContext from '../../context/ThemeContext'
 import MenuPanel from '../MenuPanel'
 import './index.css'
@@ -80,7 +80,6 @@ class Header extends Component {
       <ThemeContext.Consumer>
         {value => {
           const {isDarkTheme, changeTheme} = value
-          const logoUrl = isDarkTheme ? logoDarkTheme : logoLightTheme
           const iconProps = {
             size: 24,
             color: isDarkTheme ? '#ffffff' : '#000000',
@@ -103,8 +102,10 @@ class Header extends Component {
             <>
               <NavbarContainer isDarkTheme={isDarkTheme}>
                 <NavContentContainer>
-                  <Link to="/">
-                    <NxtWatchLogo src={logoUrl} alt="website logo" />
+                  <Link to="/" className="app-title">
+                    <NxtWatchLogo isDarkTheme={isDarkTheme}>
+                      iWATCH
+                    </NxtWatchLogo>
                   </Link>
                   <NavbarOptions>
                     <NavOption>

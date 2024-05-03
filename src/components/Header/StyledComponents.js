@@ -10,18 +10,19 @@ export const NavbarContainer = styled.nav`
 `
 export const NavContentContainer = styled.div`
   width: 100%;
-  max-width: 95vw;
+  max-width: 96vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `
-export const NxtWatchLogo = styled.img`
-  height: 25px;
-  width: 100px;
+export const NxtWatchLogo = styled.h1`
+  font-size: 24px;
   @media screen and (min-width: 768px) {
-    height: 25px;
-    width: 120px;
+    font-size: 26px;
   }
+  color: ${props => (props.isDarkTheme ? '#ffffff' : '#313131')};
+  font-weight: 600;
+  font-family: 'Roboto';
 `
 export const NavbarOptions = styled.ul`
   padding: 0px;
